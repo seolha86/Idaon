@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!--    <style name="Theme.Idaon" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+    <style name="Theme.Idaon" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/bg</item>
+        <item name="colorPrimaryVariant">@color/yellow</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="elevation">1dp</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#FFD801</item>
+        <item name="colorSecondaryVariant">#FFD801</item>
+        <item name="colorOnSecondary">#4F3F3F</item>
+        <!-- Status bar color. -->
+        <!--            <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="actionMenuTextColor">@color/orange</item>
+<!--        <!—edit text default style⮑-->
+        <item name="colorAccent">@color/orange</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/radius</item>
+    </style>
+
+</resources>

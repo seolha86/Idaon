@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.PencilActivity">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar10"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/itemtitle"
+                android:layout_width="362dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_view"
+                android:hint="제목을 입력하세요."
+                android:imeActionLabel="action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:selectAllOnFocus="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pencilimageview" />
+
+            <EditText
+                android:id="@+id/itemcontent"
+                android:layout_width="362dp"
+                android:layout_height="468dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_view"
+                android:gravity="top"
+                android:hint="내용을 입력하세요."
+                android:imeActionLabel="action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false"
+                android:selectAllOnFocus="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemtitle"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/pencilimageview"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/stroke"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_photo_camera_24"
+                app:layout_constraintBottom_toTopOf="@+id/itemtitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar10"
+        android:layout_width="369dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

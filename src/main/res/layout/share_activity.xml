@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="627dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="627dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="387dp"
+                android:layout_weight="4"
+                android:background="@color/bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp">
+
+                    <ImageView
+                        android:layout_width="68dp"
+                        android:layout_height="52dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_baseline_person_24" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="아이다온"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7분전"
+                            android:textColor="@color/orange"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sharetitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:text="title"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sharecontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="94dp"
+                        android:text="content"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/shareimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="152dp"
+                        android:src="@drawable/ic_launcher_background" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="387dp"
+                android:layout_weight="4"
+                android:background="@color/bg"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/comment_button"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_chat_bubble_outline_24"
+                        android:drawablePadding="15dp"
+                        android:gravity="left|center_vertical"
+                        android:text="댓글 보기" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/comment_recylcer"
+                        android:layout_width="match_parent"
+                        android:layout_height="305dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:background="#bababa" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg"
+        android:weightSum="10"
+        android:id="@+id/comment_layout">
+
+        <LinearLayout
+            android:layout_width="364dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7">
+
+            <EditText
+                android:id="@+id/input_r_content"
+                android:layout_width="351dp"
+                android:layout_height="53dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:hint="댓글을 입력해 주세요."
+                android:textColor="@color/text"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_r_write"
+                android:layout_width="39dp"
+                android:layout_height="37dp"
+                android:background="@color/orange"
+                android:src="@drawable/ic_baseline_arrow_upward_24" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

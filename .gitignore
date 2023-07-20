@@ -1,0 +1,6 @@
+/build
+/.idea
+/libs
+/src/androidTest
+/src/test
+/google-services

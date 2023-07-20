@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_chat2"
+        android:title="채팅"
+        android:icon="@drawable/ic_outline_chat_24"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_add"
+        android:title="물품등록"
+        android:icon="@drawable/ic_outline_add_circle_outline_24"
+        app:showAsAction="always" />
+
+</menu>
+    <!--        app:actionViewClass="android.widget.SearchView"-->

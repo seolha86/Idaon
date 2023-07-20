@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory android:title="알림 설정"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreference
+            android:key="community"
+            android:title="게시판 댓글"
+            android:summary="나의다온님이 댓글을 등록하였습니다."
+            app:iconSpaceReserved="false"/>
+        <SwitchPreference
+            android:key="communitylike"
+            android:title="게시판 공감"
+            android:summary="나의다온님이 회원님의 게시물에 공감을 눌렀습니다."
+            app:iconSpaceReserved="false"/>
+        <SwitchPreference
+            android:key="item"
+            android:title="중고거래 댓글"
+            android:summary="나의다온님이 회원님의 중고물품에 댓글을 남겼습니다."
+            app:iconSpaceReserved="false"/>
+        <SwitchPreference
+            android:key="chat"
+            android:title="채팅"
+            android:summary="새로운 메시지가 왔습니다."
+            app:iconSpaceReserved="false"/>
+        <SwitchPreference
+            android:key="service"
+            android:title="공공서비스 알림"
+            android:summary="새로운 공공서비스가 있습니다."
+            app:iconSpaceReserved="false"/>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

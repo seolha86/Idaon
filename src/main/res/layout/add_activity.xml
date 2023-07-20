@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".item.AddActivity">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/itemtitle"
+                android:layout_width="345dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_view"
+                android:hint="글 제목"
+                android:imeActionLabel="action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:selectAllOnFocus="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addimageView" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/itemprice"
+                android:layout_width="347dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_view"
+                android:hint="가격"
+                android:imeActionLabel="action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemtitle" />
+
+            <EditText
+                android:id="@+id/itemcontent"
+                android:layout_width="345dp"
+                android:layout_height="356dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_view"
+                android:gravity="top"
+                android:hint="내용을 입력하세요."
+                android:imeActionLabel="action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false"
+                android:selectAllOnFocus="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.478"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemprice"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/addimageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/stroke"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_photo_camera_24"
+                app:layout_constraintBottom_toTopOf="@+id/itemtitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.048"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="369dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/share"
+        android:title="공유"
+        android:icon="@drawable/ic_baseline_ios_share_24"
+        app:showAsAction="always" />
+
+    <group
+        android:id="@+id/option_menu">
+    <item
+        android:id = "@+id/modify"
+        android:title = "수정"
+        android:icon="@drawable/ic_delete" />
+
+    <item
+        android:id = "@+id/delete"
+        android:title = "삭제"
+        android:icon="@drawable/ic_delete" />
+    </group>
+
+</menu>

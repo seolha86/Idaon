@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="#ffe8db"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="3"
+            android:background="@drawable/boxview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="143dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="서비스명"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/serdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="103dp"
+                    android:layout_marginRight="10dp"
+                    android:text="서비스 설명"
+                    android:textColor="@color/text"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="7"
+            android:background="@drawable/boxview"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/serphone1"
+                    android:layout_width="115dp"
+                    android:layout_height="37dp"
+                    android:text="전화문의"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="#BDBDBD" />
+
+                <TextView
+                    android:id="@+id/serphone2"
+                    android:layout_width="115dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:text="129"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/serway1"
+                    android:layout_width="115dp"
+                    android:layout_height="37dp"
+                    android:text="신청방법"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="#BDBDBD" />
+
+                <TextView
+                    android:id="@+id/serway2"
+                    android:layout_width="115dp"
+                    android:layout_height="76dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="방문/온라인"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="7"
+            android:background="@drawable/boxview"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sersurport1"
+                    android:layout_width="115dp"
+                    android:layout_height="37dp"
+                    android:text="지원대상"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="#BDBDBD" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sersurport2"
+                        android:layout_width="match_parent"
+                        android:layout_height="94dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="지원대상"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="7"
+            android:background="@drawable/boxview"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/serplus1"
+                    android:layout_width="115dp"
+                    android:layout_height="37dp"
+                    android:text="지원내용"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="#BDBDBD" />
+
+                <TextView
+                    android:id="@+id/serplus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="내용"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sitebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="사이트 바로가기"
+            android:textColor="@color/white"
+            android:backgroundTint="#FF5500">
+
+        </Button>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

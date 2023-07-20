@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.idaon">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Idaon"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory">
+        <activity
+            android:name=".FindId"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".mypage.VersionActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".mypage.PushPreferenceActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".mypage.CustomPreferenceActivity"
+            android:exported="false"
+            android:label="@string/title_activity_custom_preference">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".home.PencilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mypage.MyregionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mypage.WriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mypage.LikeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mypage.SellActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mypage.BuyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".item.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".item.ChatroomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".item.AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mypage.EdictActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.ShareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".item.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.ServiceDetailActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="1515b40216f64e394fac0d97f301414e" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="1515b40216f64e394fac0d97f301414e" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.idaon.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- <!— authorities="현재 패키지명.FileProvider" 이 앱의 파일 프로바이더에 권한 부여 ⮑ -->
+            <!-- <!— grantUriPermissions=사진 가져올 때 주소 필요해서 true ⮑ -->
+
+
+            <!-- <!— 찍은 사진 저장될 주소 ⮑ -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".MyFirebaseServices"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

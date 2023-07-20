@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory android:title="알림 설정"
+        app:iconSpaceReserved="false">
+
+        <PreferenceScreen
+            android:key="push"
+            android:title="알림 푸시 설정"
+            app:iconSpaceReserved="false" />
+
+        <!--        <SwitchPreference-->
+        <!--            android:key="sound"-->
+        <!--            android:title="소리"/>-->
+        <!--        <ListPreference-->
+        <!--            android:entries="@array/array_voice"-->
+        <!--            android:entryValues="@array/array_voice"-->
+        <!--            android:key="sound_list"-->
+        <!--            android:summary="카톡"-->
+        <!--            android:title="알림음음"-->
+        <!--            />-->
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="사용자 설정"
+        app:iconSpaceReserved="false">
+
+        <PreferenceScreen
+            android:key="pwd"
+            android:title="비밀번호 변경"
+            app:iconSpaceReserved="false" />
+        <PreferenceScreen
+            android:key="block"
+            android:title="신고 및 차단"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="기타"
+        app:iconSpaceReserved="false">
+
+        <PreferenceScreen
+            android:key="use"
+            android:title="이용약관"
+            app:iconSpaceReserved="false" />
+        <PreferenceScreen
+            android:key="privacy"
+            android:title="개인정보 취급방침"
+            app:iconSpaceReserved="false" />
+        <PreferenceScreen
+            android:key="version"
+            android:title="앱 버전 정보"
+            app:iconSpaceReserved="false" />
+        <PreferenceScreen
+            android:key="end"
+            android:title="회원탈퇴"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

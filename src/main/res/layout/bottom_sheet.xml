@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="조건 설정하기"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/a1"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="임신/출산" />
+
+            <RadioButton
+                android:id="@+id/a2"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="저소득층" />
+
+            <RadioButton
+                android:id="@+id/a3"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="취약계층" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/a4"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="한부모가정" />
+
+            <RadioButton
+                android:id="@+id/a5"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="소녀/소년가정" />
+
+            <RadioButton
+                android:id="@+id/a6"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="조손가정" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/a7"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="다자녀" />
+
+            <RadioButton
+                android:id="@+id/a8"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="다문화" />
+
+            <RadioButton
+                android:id="@+id/a9"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="입양" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/a10"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="영유아" />
+
+            <RadioButton
+                android:id="@+id/a11"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="청소년" />
+
+            <RadioButton
+                android:id="@+id/a12"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="청년" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/a13"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="중장년" />
+
+            <RadioButton
+                android:id="@+id/a14"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="장애인" />
+
+            <RadioButton
+                android:id="@+id/a15"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:paddingLeft="5dp"
+                android:text="아동위탁가정" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <Button
+            android:id="@+id/btn_hide_bt_sheet"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_button"
+            android:text="취소"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_apply_bt_sheet"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="27dp"
+            android:background="@drawable/custom_button"
+            android:text="적용"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
