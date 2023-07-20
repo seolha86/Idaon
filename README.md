@@ -4,9 +4,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    ![아이다온_로고](https://github.com/seolha86/Idaon/assets/93528672/96242d03-ae30-410c-98c9-cf6e74316523)
+    <img width=300 src="https://github.com/seolha86/Idaon/assets/93528672/96242d03-ae30-410c-98c9-cf6e74316523">
 
-  <h3 align="center">아이다</h3>
+  <h3 align="center">아이다온</h3>
 
 
   <p align="center">
